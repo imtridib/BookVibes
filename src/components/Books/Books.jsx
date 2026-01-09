@@ -23,6 +23,8 @@ const Books = () => {
 
 export default Books;
 
+//Useeffect steps to fetch data from API
+
 /**
  * 1. state to store books
  * 2. useEfftect
