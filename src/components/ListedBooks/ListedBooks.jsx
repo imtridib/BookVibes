@@ -9,7 +9,7 @@ const LIstedBooks = () => {
   const [sort, setSort] = useState("");
   const allBooks = useLoaderData();
   // ideally we will directly get the read book list from the database
-
+  // but for now we are fetching all books and then filtering the read books
   useEffect(() => {
     const storedReadList = getStoredReadList();
     const storedReadListInt = storedReadList.map((id) => parseInt(id));
